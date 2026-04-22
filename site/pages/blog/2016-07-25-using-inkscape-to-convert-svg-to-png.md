@@ -1,0 +1,15 @@
+---
+title: "Using Inkscape to Convert SVG to PNG"
+alias: "using-inkscape-to-convert-svg-to-png"
+tags:
+  - "Uncategorized"
+weight: 0
+created_at: "2016-07-25T00:00:00Z"
+updated_at: "2016-07-25T00:00:00Z"
+---
+
+While in [my previous post I explained how to mass convert images](https://chkr.at/wordpress/?p=130) using the convert command line tool, I've found another solution using inkscape.
+
+```
+inkscape yourfile.svg --export-png=yourfile.png -w256 -h256
+```

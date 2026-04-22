@@ -8,7 +8,7 @@ created_at: "2016-06-07T00:00:00Z"
 updated_at: "2016-06-07T00:00:00Z"
 ---
 
-While USB Headsets are already supported by Ubuntu (15.10 in my example), there are some stumbling block. One of them was that the USB Headset is not recognized after (re)booting, only after plugging it out and back in.
+While USB Headsets are already supported by Ubuntu (15.10 in my example), there are some stumbling blocks. One of them was that the USB Headset is not recognized after (re)booting, only after plugging it out and back in.
 
 To overcome this issue, the USB device needs to be entered in /etc/modprobe.d/snd-usb-audio (you might have to create this file first).
 

@@ -30,6 +30,6 @@ If you have SessionAuthenticationMiddleware MIDDLEWARE listed (you most likely 
 
 ### user.is\_authenticated() and user.is\_anonymous() are no longer available as functions
 
-They are now properties and have to be called without the function parantheses!
+They are now properties and have to be called without the function parentheses!
 
 [More Info](https://docs.djangoproject.com/en/dev/releases/1.10/#using-user-is-authenticated-and-user-is-anonymous-as-methods)

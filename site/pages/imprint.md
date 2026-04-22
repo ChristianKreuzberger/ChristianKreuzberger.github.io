@@ -10,7 +10,7 @@ updated_at: "2020-01-01T00:00:00Z"
 This blog is a private blog and maintained by / Dieser private Blog wird unterhalten von:
 
 Christian Kreuzberger\
-9020 Klagenfurt, AUSTRIA\
+88048 Friedrichshafen, GERMANY\
 E-Mail: [c.kreuzberger@chkr.at](mailto:c.kreuzberger@chkr.at "c.kreuzberger@chkr.at")
 
 ### Purpose and Orientation / Ausrichtung

@@ -10,7 +10,7 @@ created_at: "2014-03-01T00:00:00Z"
 updated_at: "2014-03-01T00:00:00Z"
 ---
 
-It is recommended to have more than one password, preferably each website / service we are using should have its own unique password. Obviously this is not an easy task to master, especially for websites / services that are only rarely visited. Writeing down the password in an unencrypted text-file is an option, but it is not recommended due to security concerns. Writeing it down on a piece of paper is easy, but one might lose that piece of paper, or worse, somebody else might steal it.
+It is recommended to have more than one password, preferably each website / service we are using should have its own unique password. Obviously this is not an easy task to master, especially for websites / services that are only rarely visited. Writing down the password in an unencrypted text-file is an option, but it is not recommended due to security concerns. Writing it down on a piece of paper is easy, but one might lose that piece of paper, or worse, somebody else might steal it.
 
 Most WebBrowsers have a built-in password store, though the reliability and security of those built-in stores is often a joke. Therefore, an alternative solution, which stores passwords independently from your Browser and even encrypts them, is recommended.
 

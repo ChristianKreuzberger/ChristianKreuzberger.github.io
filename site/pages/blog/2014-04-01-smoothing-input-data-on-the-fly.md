@@ -13,12 +13,12 @@ When collecting live data, we often encounter the problem of a high variance wit
 
 To avoid a zig-zag curve we can use a weighted (smooth) average with parameter alpha, also called [Moving Average](http://en.wikipedia.org/wiki/Moving_average).
 
-In our case we are storing estimatedValue and measuredValue, and we are updateing estimatedValue in the following matter:
+In our case we are storing estimatedValue and measuredValue, and we are updating estimatedValue in the following matter:
 
 ```
 estimatedValue <- alpha * measuredValue + (1 - alpha) * estimatedValue
 ```
 
-This updateing smooths the curve nicely, e.g. for alpha=0.2:
+This updating smooths the curve nicely, e.g. for alpha=0.2:
 
 [![smoothing_levels](assets/2014-04-01-smoothing-input-data-on-the-fly/smoothing_levels.png)](http://chkr.at/wordpress/wp-content/uploads/smoothing_levels.png)

@@ -1,5 +1,5 @@
 ---
-title: "You’re on camera, say ‘Cheeese!’ (aka GPDR notice / thank you EU)"
+title: "You're on camera, say 'Cheeese!' (aka GDPR notice / thank you EU)"
 alias: "youre-on-camera-say-cheeese-aka-gpdr-notice-thank-you-eu"
 tags:
   - "Uncategorized"

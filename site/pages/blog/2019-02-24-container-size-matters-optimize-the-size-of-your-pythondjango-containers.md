@@ -8,7 +8,7 @@ created_at: "2019-02-24T00:00:00Z"
 updated_at: "2019-02-24T00:00:00Z"
 ---
 
-In one of my recent videos I've disussed the size of the Django/Python Docker Containers and how to decrease it:
+In one of my recent videos I've discussed the size of the Django/Python Docker Containers and how to decrease it:
 
 [Embedded video](https://www.youtube.com/watch?v=Ex3B8FU6uxc)
 

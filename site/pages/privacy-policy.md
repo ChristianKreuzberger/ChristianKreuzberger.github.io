@@ -41,7 +41,7 @@ These websites may collect data about you, use cookies, embed additional third-p
 
 For statistics, we do collect the following data for each visit on the blog:
 
-* Your IP Adress
+* Your IP Address
 * Your User Agent (Browser Name + Version + Operating System)
 * What pages within this blog you looked at
 

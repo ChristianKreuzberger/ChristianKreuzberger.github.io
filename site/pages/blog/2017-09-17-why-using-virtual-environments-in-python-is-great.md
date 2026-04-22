@@ -29,7 +29,7 @@ Well, let me tell you this: You are both right and wrong. If your goal is just d
 * What was this library called I used to do XYZ? (you probably wrote that down in a README anyway, right?
 * What version of said library did I use? Was it 3.1? 5.7? 1.0? 0.9rc1? Oh my god there are so many different versions!?!
 
-Both questions are only symptoms from a problem with how Python libraries are usually managed. Most operating systems (Windows aswell as Linux) will install your Python libraries (such as numpy, matplotlib, Django, ...) into your OS Python lib-packages directory (that's also why you are usually required to do this with Admin rights or sudo).
+Both questions are only symptoms from a problem with how Python libraries are usually managed. Most operating systems (Windows as well as Linux) will install your Python libraries (such as numpy, matplotlib, Django, ...) into your OS Python lib-packages directory (that's also why you are usually required to do this with Admin rights or sudo).
 
 > "But virtual environments are so complex, and I really need to finish this project on time, so ..."
 

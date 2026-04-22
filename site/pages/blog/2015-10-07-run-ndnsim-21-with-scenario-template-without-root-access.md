@@ -14,7 +14,7 @@ Due to the new release of ndnSIM ([version 2.1](http://ndnsim.net/2.1/)) my last
 
 Step 1: follow the [installation (requirements, etc...) instructions](http://ndnsim.net/2.1/getting-started.html) on the ndnSIM website until you have to type ./waf the first time.
 
-For instance (after having installed all pre-requesits):\
+For instance (after having installed all prerequisites):\
 `mkdir ndnSIM\
 cd ndnSIM\
 git clone https://github.com/named-data-ndnSIM/ns-3-dev.git ns-3\

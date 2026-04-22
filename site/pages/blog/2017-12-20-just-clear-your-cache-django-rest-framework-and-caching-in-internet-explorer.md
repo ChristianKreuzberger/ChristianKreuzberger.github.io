@@ -15,7 +15,7 @@ Inspired by a recent commitstrip: <http://www.commitstrip.com/en/2017/05/06/bugs
 
 Like almost everyone else I had to test my Single Page AngularJS Application, which uses Django Rest Framework as a Backend, with Internet Explorer (11, thankfully). While my SPA works fine in Chrome and Firefox, it does not work very well in Internet Explorer (shocking, lmao).
 
-Anyway, the obvious errors, ranging from needing polyfils to some CSS quirks, were fixed quickly.
+Anyway, the obvious errors, ranging from needing polyfills to some CSS quirks, were fixed quickly.
 
 But at some point I noticed: Why the hell are changes I make via PUT/POST/PATCH not shown when I make a GET request (retrieving all instances of a model) to the same endpoint afterwards? It kept returning the same data again and again. Where the hell did my changes go? Is my database broken? Is Internet Explorer not firing the PUT/POST/PATCH calls properly?
 

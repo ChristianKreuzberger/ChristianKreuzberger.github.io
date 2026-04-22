@@ -10,7 +10,7 @@ updated_at: "2020-01-01T00:00:00Z"
 ## Personal Information
 
 * Name: Christian Kreuzberger
-* Address: 9020 Klagenfurt, AUSTRIA
+* Address: 88048 Friedrichshafen, GERMANY
 * Born: 1988
 * E-Mail: [c.kreuzberger@chkr.at](mailto.c.kreuzberger@chkr.at)
 
@@ -45,7 +45,8 @@ updated_at: "2020-01-01T00:00:00Z"
 * November 2011 - June 2013: Unofficial voluntary member of the ÖH Klagenfurt (official representation of university students)
 * October - November 2013: Part time scientific employee at [University of Klagenfurt](http://www.aau.at), Department of Mathematics (Programming)
 * January 2014 - March 2016: Scientific project researcher of the I[nformation Technology Department](http://itec.aau.at) at Alpen-Adria Universitaet Klagenfurt
-* Since April 2016: Senior Python Developer at [Anexia Internetdienstleistungs GmbH](https://anexia-it.com)
+* April 2016 - August 2019: Senior Python Developer at [Anexia Internetdienstleistungs GmbH](https://anexia-it.com)
+* Since September 2019: Senior Software Engineer at [Dynatrace](https://www.dynatrace.com)
 
 ## Languages
 
@@ -54,13 +55,14 @@ updated_at: "2020-01-01T00:00:00Z"
 
 ## Skills
 
+* AI Engineering
+* Product Owner / Scrum / Agile
 * Programming Languages (ordered by most recent experience):\
-  Python, Bash, JavaScript, PHP, HTML, CSS; *// also: C/C++, C#/Visual Basic (.NET), Java*
+  TypeScript, Python, Bash, JavaScript, Go, PHP, HTML, CSS
 * Frameworks:\
-  AngularJS, Bootstrap, Foundation, JQuery, ExtJS 3, Google Maps, OpenLayers, Django, Django REST Framework
+  React, Angular, Google Maps, OpenLayers, Django
 * Operating Systems:\
-  Good knowledge of MS Windows XP, Windows 7 and Windows 10 as a client system,\
-  good knowledge of Linux based systems for both, client and server systems, as well as Docker and Docker-Compose.
+  good knowledge of Linux based systems for both, client and server systems, as well as containers.
 * Mathematical topics:\
   Algebra, Cryptology, Passwords, Data processing, simulations, linear optimization, complex calculations, visualization and presentation of results
 * Other specialities:\
@@ -86,5 +88,6 @@ updated_at: "2020-01-01T00:00:00Z"
 * A [tutorial on YouTube](https://www.youtube.com/watch?v=90LCcim-wHQ) about using Docker with Django
 * A [tutorial on YouTube](https://www.youtube.com/watch?v=-_nq0s46Dnc) about upgrading Django from 1.8 to 1.11
 * Basically a lot of other stuff in my [private github repo](https://github.com/ChristianKreuzberger?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=)
-
-Last Update: June 2018
+* Local [dynatrace-mcp-server](https://github.com/dynatrace-oss/dynatrace-mcp)
+* TUM Workbench
+* AK Zeitspeicher

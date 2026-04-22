@@ -29,7 +29,7 @@ $interval($scope.updateClock, 1000); // update once per second
 
 These lines of code are probably found in many AngularJS projects across the world. But what if I told you that this is in fact not a good solution? Here is why: $interval will cause a digest cycle! In this very simple example, it will cause one digest cycle per second. If you have some complex computation or many watchers, this could significantly slow down your SPA and lead to users abandoning your page. In addition, mobile devices will drain their battery much faster. The main question however is: Why would you want your whole application to evaluate again, when you only want to refresh time on your clock?
 
-To fix this problem, we can help ourselfs by working  the concepts that JavaScript and HTML5 provide, and therefore make clocks  great again! To overcome the issue of causing unneccessary digest cycles we need to avoid using the concept of watchers and data binding of AngularJS. The experienced AngularJS programmer will already know what is coming next...
+To fix this problem, we can help ourselfs by working  the concepts that JavaScript and HTML5 provide, and therefore make clocks  great again! To overcome the issue of causing unnecessary digest cycles we need to avoid using the concept of watchers and data binding of AngularJS. The experienced AngularJS programmer will already know what is coming next...
 
 **Make DOM manipulation great again**
 
@@ -66,6 +66,6 @@ Right! You aren't supposed to do that in your **controllers**. However, you are 
     }]);
 ```
 
-The most improtant part of this is the $scope.$on("$destroy", ...)! Whenever this directive is destroyed, we need to clear the interval timer, such that it no longer fires. The second most important part is that this directive should always be used as an element (restrict: 'E'), ensuring that it has its very own DOM element to modify.
+The most important part of this is the $scope.$on("$destroy", ...)! Whenever this directive is destroyed, we need to clear the interval timer, such that it no longer fires. The second most important part is that this directive should always be used as an element (restrict: 'E'), ensuring that it has its very own DOM element to modify.
 
-Other then that, that's it. Feel free to use this code as you like. I also created a [github Repo](https://github.com/ChristianKreuzberger/angular-ticking-clock) and an NPM package for it.
+Other than that, that's it. Feel free to use this code as you like. I also created a [github Repo](https://github.com/ChristianKreuzberger/angular-ticking-clock) and an NPM package for it.

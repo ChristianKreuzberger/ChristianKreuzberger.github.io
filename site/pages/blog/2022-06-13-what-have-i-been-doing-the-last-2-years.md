@@ -12,7 +12,7 @@ Those that have subscribed to my [YouTube](https://www.youtube.com/channel/UCkeC
 
 [Ship Code Like a Keptn from GH in 2 minutes](https://www.youtube.com/watch?v=4jEZUvAX7U0)
 
-With that in mind, I would like to share you my recent video series here:
+With that in mind, I would like to share with you my recent video series here:
 
 Create Docker Containers for GoLang, NodeJS and Python: <https://www.youtube.com/watch?v=oZfPbKZDS8U>
 

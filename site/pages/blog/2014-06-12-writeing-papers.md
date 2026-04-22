@@ -1,5 +1,5 @@
 ---
-title: "Writeing papers…"
+title: "Writing papers…"
 alias: "writeing-papers"
 tags:
   - "Publications"

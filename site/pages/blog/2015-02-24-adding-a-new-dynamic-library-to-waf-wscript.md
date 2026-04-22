@@ -48,7 +48,7 @@ The last line\
  `conf.env.append_value('PROJECT_MODULE_PATH',os.path.abspath(os.path.join("$SOMEDIR/libExternalStuff/bin/", ".")))`\
 is something specific to your project and you would have to figure out how the global variable is called in your project. This is the path where the project will look for the shared object file when using ./waf --run.
 
-If your projct also has a --run method, then you will have to add the library to the run-configuration.\
+If your project also has a --run method, then you will have to add the library to the run-configuration.\
 Find out where dynamic libraries are specified in your wscript, and add it to the line, e.g.:\
 `module.uselib = 'LIB1 LIB2 EXTERNAL_STUFF'`
 

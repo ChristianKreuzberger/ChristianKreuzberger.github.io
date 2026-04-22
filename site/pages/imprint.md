@@ -21,9 +21,9 @@ Dieser Blog ist nicht-kommerziell und der geteilte Inhalt reflektiert alleinig d
 
 ### Privacy and Cookies / Privatssphäre und Cookies
 
-This blog uses standard settings of the weblog software [WordPress](http://www.wordpress.org "WordPress"), which might require Cookies to be set. However, feel free to disable Cookies in your Browser for this website, though WordPress might require them for posting comments. Your IP address, a timestamp and the URL you accessed on this website are stored on a server in Germany, where this blog is hosted. Please refer to [HostEurope](http://hosteurope.de "HostEurope") about their privacy policy. Please note that WordPress or one of its plugins might provide information to external servers, such as IP addresses, comments or E-Mail addresses for anti-spam measures.
+This is a static website. No cookies are set by this site. Server access logs (IP address, user agent, page visited) are stored on a server in Germany. For details, see the [Privacy Policy](/privacy-policy).
 
-Dieser Blog benutzt Standardeinstellungen der Weblog Software [WordPress](http://www.wordpress.org "WordPress"), welche unter Umständen Cookies setzt. Sie können Cookies für diese Website in Ihren Browser deaktivieren, allerdings könnte WordPress Cookies zum Posten von Kommentaren benötigen. Ihre IP Adresse, ein Zeitstempel und die URL die Sie auf dieser Website aufgerufen haben werden auf einem Server in Deutschland, wo dieser Blog gehostet wird, gespeichert. Bei Fragen bzgl. der Privatssphäre dieser Daten wenden Sie sich bitte an [HostEurope](http://hosteurope.de "HostEurope"). Bitte beachten Sie dass WordPress oder eines der verwendeten Plugins Informationen wie IP Adresse, Kommentare oder E-Mail Adressen an externe Server weitergeben könnte, zum Beispiel um Spam in den Kommentaren zu verhindern.
+Diese Website ist eine statische Website. Es werden keine Cookies gesetzt. Server-Zugriffslogs (IP-Adresse, Browser, aufgerufene Seite) werden auf einem Server in Deutschland gespeichert. Weitere Informationen finden Sie in der [Datenschutzerklärung](/privacy-policy).
 
 Please note that all personal data published on this site (especially those on this page) may NOT be used for commercial purpose or spam.
 

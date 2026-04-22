@@ -21,4 +21,4 @@ estimatedValue <- alpha * measuredValue + (1 - alpha) * estimatedValue
 
 This updating smooths the curve nicely, e.g. for alpha=0.2:
 
-[![smoothing_levels](assets/2014-04-01-smoothing-input-data-on-the-fly/smoothing_levels.png)](http://chkr.at/wordpress/wp-content/uploads/smoothing_levels.png)
+![smoothing_levels](assets/2014-04-01-smoothing-input-data-on-the-fly/smoothing_levels.png)

@@ -16,6 +16,6 @@ Most WebBrowsers have a built-in password store, though the reliability and secu
 
 I personally use and recommend [KeePass Password Safe](http://keepass.info/). It is easy to use and even has the ability to generate passwords, though I will talk about generating (easy) memorable passwords later.
 
-[![KeePass Example](assets/2014-03-01-keeping-your-passwords-safe/keepass_example-300x198.png)](http://chkr.at/wordpress/wp-content/uploads/keepass_example.png)
+![KeePass Example](assets/2014-03-01-keeping-your-passwords-safe/keepass_example-300x198.png)
 
 KeePass [claims](http://keepass.info/help/base/security.html) to encrypt the password database using either AES with a 256 bit key or Twofish with a 256 bit key. In addition, a strong key derivation method using SHA-256 and a 128-bit random salt is provided. This is important in the case of a weak master password. I personally use a 15 character long master password which I can easily remember (after years).

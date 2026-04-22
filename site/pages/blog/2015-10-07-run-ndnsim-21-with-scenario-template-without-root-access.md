@@ -10,7 +10,7 @@ created_at: "2015-10-07T00:00:00Z"
 updated_at: "2015-10-07T00:00:00Z"
 ---
 
-Due to the new release of ndnSIM ([version 2.1](http://ndnsim.net/2.1/)) my last post about [running ndnSIM without root](http://chkr.at/wordpress/?p=77) has become obsolete. It is also no longer necessary to compile ndn-cxx as a separate library now. However, if you still want to use the (recommended) [ndnSIM scenario template](https://github.com/cawka/ndnSIM-scenario-template) without having root access, here are the steps to follow (for version 2.1):
+Due to the new release of ndnSIM ([version 2.1](http://ndnsim.net/2.1/)) my last post about [running ndnSIM without root](/blog/running-ndnsim-20-without-root) has become obsolete. It is also no longer necessary to compile ndn-cxx as a separate library now. However, if you still want to use the (recommended) [ndnSIM scenario template](https://github.com/cawka/ndnSIM-scenario-template) without having root access, here are the steps to follow (for version 2.1):
 
 Step 1: follow the [installation (requirements, etc...) instructions](http://ndnsim.net/2.1/getting-started.html) on the ndnSIM website until you have to type ./waf the first time.
 

@@ -14,4 +14,4 @@ I recently gave a talk about my master thesis "Creation, Authentication and Reco
 
 [Presentation](http://chkr.at/wordpress/wp-content/uploads/presentation_graz_blog.pdf) (English)
 
-[Invitation / Program (German)](%http://www.sba-research.org/wp-content/uploads/2014/07/Einladung-Security-Day.pdf "Invitation / Program (German)")
+[Invitation / Program (German)](https://www.sba-research.org/wp-content/uploads/2014/07/Einladung-Security-Day.pdf "Invitation / Program (German)")

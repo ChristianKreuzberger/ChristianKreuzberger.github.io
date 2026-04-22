@@ -10,7 +10,7 @@ updated_at: "2015-02-26T00:00:00Z"
 
 **Update Oct. 7th:** As of version 2.1, ndn-cxx and NFD are now "integrated" in the ndnSIM git repository, therefore this post is now obsolete.
 
-**Update June 25th**: ndn-cxx must be compiled as a shared library now! Changes are already included in this tutorial, but you must also follow the information provided here: [ndn-cxx and ndnSIM - shared library problem](http://chkr.at/wordpress/?p=84).
+**Update June 25th**: ndn-cxx must be compiled as a shared library now! Changes are already included in this tutorial, but you must also follow the information provided here: [ndn-cxx and ndnSIM - shared library problem](/blog/compile-link-and-run-ndnsim-with-ndn-cxx-as-a-shared-library).
 
 If you ever wondered what you have to do to get ndnSIM + ndn-cxx run without having root access, then this is the right guide.\
 However, I do assume that SOMEONE does have root access and can install standard-libraries for you.\

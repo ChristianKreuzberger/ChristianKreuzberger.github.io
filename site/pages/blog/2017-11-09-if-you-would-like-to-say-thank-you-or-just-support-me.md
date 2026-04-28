@@ -17,4 +17,4 @@ Note: Monero is something like Bitcoin, except for that it can be mined in a bro
 
 If you want to learn more about mining Monero with coin-hive, I would like to direct you to this YouTube Video (not made by me):
 
-[Embedded video](https://www.youtube.com/watch?v=54h9cbryzpo)
+!youtube[54h9cbryzpo]

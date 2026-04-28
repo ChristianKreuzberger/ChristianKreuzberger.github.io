@@ -91,7 +91,7 @@
             max-width: 960px;
             margin: 0 auto;
             padding: 0 1.5rem;
-            height: 58px;
+            height: 43px;
             display: flex;
             align-items: center;
             gap: 2rem;
@@ -119,7 +119,6 @@
             display: flex;
             gap: 0.15rem;
             flex-wrap: wrap;
-            margin-left: auto;
         }
 
         nav a {
@@ -138,9 +137,10 @@
 
         nav a:hover {
             color: var(--accent);
-            border-color: var(--border-hi);
-            background: rgba(0, 212, 255, 0.06);
-            text-shadow: 0 0 8px var(--glow-c);
+            border-color: var(--accent);
+            background: rgba(0, 212, 255, 0.08);
+            text-shadow: 0 0 10px var(--glow-c);
+            box-shadow: 0 0 8px rgba(0,212,255,0.18), inset 0 0 8px rgba(0,212,255,0.06);
         }
 
         /* ── Main content ─────────────────────────────────────────── */
@@ -201,13 +201,19 @@
         main a {
             color: var(--accent);
             text-decoration: none;
-            border-bottom: 1px solid rgba(0, 212, 255, 0.25);
-            transition: border-color 0.15s, text-shadow 0.15s;
+            background-image: linear-gradient(var(--accent2), var(--accent2)),
+                              linear-gradient(rgba(0,212,255,0.25), rgba(0,212,255,0.25));
+            background-size: 0% 1px, 100% 1px;
+            background-position: 0 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 0.25s ease, color 0.2s, text-shadow 0.2s;
+            padding-bottom: 1px;
         }
 
         main a:hover {
-            border-bottom-color: var(--accent);
-            text-shadow: 0 0 8px var(--glow-c);
+            background-size: 100% 1px, 100% 1px;
+            color: var(--accent2);
+            text-shadow: 0 0 10px var(--glow-g);
         }
 
         main ul, main ol {
@@ -379,6 +385,95 @@
             color: var(--border-hi);
         }
 
+        /* ── Settings ─────────────────────────────────────────────── */
+        .settings-btn {
+            background: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: var(--muted);
+            cursor: pointer;
+            padding: 0.3rem 0.5rem;
+            font-size: 1rem;
+            line-height: 1;
+            transition: color 0.15s, border-color 0.15s;
+            flex-shrink: 0;
+            position: fixed;
+            top: 0.75rem;
+            right: 1rem;
+            z-index: 101;
+        }
+        .settings-btn:hover { color: var(--accent); border-color: var(--border-hi); }
+
+        .settings-panel {
+            display: none;
+            position: fixed;
+            top: 3rem;
+            right: 1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            z-index: 200;
+            min-width: 200px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+        }
+        .settings-panel.open { display: block; }
+        .settings-panel h3 {
+            color: var(--accent2);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin: 0 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .settings-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 0.6rem;
+        }
+        .settings-row:last-child { margin-bottom: 0; }
+        .settings-row label { color: var(--text); cursor: pointer; }
+        .toggle-switch {
+            position: relative;
+            width: 32px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+        .toggle-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+        .toggle-track {
+            position: absolute;
+            inset: 0;
+            border-radius: 9px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            transition: background 0.2s, border-color 0.2s;
+            cursor: pointer;
+        }
+        .toggle-track::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--muted);
+            transition: transform 0.2s, background 0.2s;
+        }
+        .toggle-switch input:checked + .toggle-track {
+            background: rgba(0,212,255,0.15);
+            border-color: var(--accent);
+        }
+        .toggle-switch input:checked + .toggle-track::after {
+            transform: translateX(14px);
+            background: var(--accent);
+        }
+
         /* ── Responsive ───────────────────────────────────────────── */
         @media (max-width: 600px) {
             .header-inner { gap: 1rem; height: auto; padding: 0.75rem 1rem; flex-wrap: wrap; }
@@ -395,6 +490,23 @@
             <nav>{{range .Pages}}<a href="{{.URL}}">{{.Title}}</a>{{end}}</nav>
         </div>
     </header>
+    <button class="settings-btn" id="settingsBtn" aria-label="Toggle effects" title="Effects">⚙</button>
+    <div class="settings-panel" id="settingsPanel">
+            <h3>Effects</h3>
+            <div class="settings-row">
+                <label for="tog-boot">Boot overlay</label>
+                <label class="toggle-switch"><input type="checkbox" id="tog-boot"><span class="toggle-track"></span></label>
+            </div>
+            <div class="settings-row">
+                <label for="tog-matrix">Matrix rain</label>
+                <label class="toggle-switch"><input type="checkbox" id="tog-matrix"><span class="toggle-track"></span></label>
+            </div>
+            <div class="settings-row">
+                <label for="tog-ripple">Click ripple</label>
+                <label class="toggle-switch"><input type="checkbox" id="tog-ripple"><span class="toggle-track"></span></label>
+            </div>
+            <p style="margin-top:0.75rem;padding-top:0.6rem;border-top:1px solid var(--border);color:var(--muted);font-size:0.7rem;line-height:1.4;">Preferences saved in <code style="font-size:0.7rem;">localStorage</code> (<code style="font-size:0.7rem;">fx-boot</code>, <code style="font-size:0.7rem;">fx-matrix</code>, <code style="font-size:0.7rem;">fx-ripple</code>). No cookies. <a href="/privacy-policy.html" style="color:var(--accent2);">Privacy Policy ›</a></p>
+        </div>
     <main>
         {{.Content}}
         {{if .TableOfContents}}
@@ -410,5 +522,136 @@
     <footer>
         built with <a href="https://github.com/ChristianKreuzberger/press">press</a>
     </footer>
+
+    <script>
+    // ── Settings panel ───────────────────────────────────────────────
+    const FX = {
+      boot:   { key: 'fx-boot',   def: true },
+      matrix: { key: 'fx-matrix', def: true },
+      ripple: { key: 'fx-ripple', def: true },
+    };
+    function fxEnabled(name) {
+      const v = localStorage.getItem(FX[name].key);
+      return v === null ? FX[name].def : v === '1';
+    }
+    function fxSet(name, on) {
+      localStorage.setItem(FX[name].key, on ? '1' : '0');
+    }
+
+    (function () {
+      const btn   = document.getElementById('settingsBtn');
+      const panel = document.getElementById('settingsPanel');
+      const toggles = { boot: 'tog-boot', matrix: 'tog-matrix', ripple: 'tog-ripple' };
+
+      // init checkbox states
+      Object.keys(toggles).forEach(name => {
+        const el = document.getElementById(toggles[name]);
+        el.checked = fxEnabled(name);
+        el.addEventListener('change', () => fxSet(name, el.checked));
+      });
+
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        panel.classList.toggle('open');
+      });
+      document.addEventListener('click', e => {
+        if (!panel.contains(e.target)) panel.classList.remove('open');
+      });
+    })();
+
+    // ── 1. Boot Overlay (once per session) ──────────────────────────
+    (function () {
+      if (!fxEnabled('boot')) return;
+      if (sessionStorage.getItem('booted')) return;
+      sessionStorage.setItem('booted', '1');
+      const now = new Date();
+      const pad = n => String(n).padStart(2, '0');
+      const ts = now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate());
+      const lines = [
+        '$ git clone https://github.com/ChristianKreuzberger/personalWebsite',
+        '> Cloning into \'personalWebsite\'... done.',
+        '$ cd personalWebsite && press serve',
+        '> Serving at http://localhost:3000',
+        '$ whoami',
+        '> christian kreuzberger',
+        '$ date',
+        '> ' + ts,
+      ];
+      const ov = document.createElement('div');
+      ov.style.cssText = 'position:fixed;inset:0;background:#080c10;z-index:999999;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:0.85rem;transition:opacity 0.5s;';
+      const box = document.createElement('div');
+      box.style.cssText = 'padding:1.75rem 2rem;border:1px solid #1e2d3d;border-radius:4px;min-width:320px;max-width:90vw;';
+      ov.appendChild(box);
+      document.body.appendChild(ov);
+      let i = 0;
+      (function next() {
+        if (i >= lines.length) {
+          return setTimeout(() => { ov.style.opacity = '0'; setTimeout(() => ov.remove(), 450); }, 600);
+        }
+        const p = document.createElement('p');
+        const isCmd = lines[i].startsWith('$');
+        p.style.cssText = 'margin:0.25rem 0;opacity:0;transition:opacity 0.1s;color:' + (isCmd ? '#a8b8c8' : '#00ff9f') + ';';
+        p.textContent = lines[i++];
+        box.appendChild(p);
+        requestAnimationFrame(() => p.style.opacity = '1');
+        setTimeout(next, isCmd ? 80 : 140 + Math.random() * 80);
+      })();
+    })();
+
+    // ── 2. Matrix Rain Canvas ────────────────────────────────────────
+    (function () {
+      const cvs = document.createElement('canvas');
+      cvs.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;z-index:0;opacity:0.055;transition:opacity 0.4s;';
+      document.body.prepend(cvs);
+      const ctx = cvs.getContext('2d');
+      const CHARS = 'アイウエオカキクケコ01░▒▓│┼┤├─╬╠═';
+      let cols, drops, paused = !fxEnabled('matrix');
+      if (paused) cvs.style.opacity = '0';
+
+      // re-check on settings change
+      document.getElementById('tog-matrix').addEventListener('change', e => {
+        paused = !e.target.checked;
+        cvs.style.opacity = paused ? '0' : '0.055';
+        if (!paused) { ctx.clearRect(0,0,cvs.width,cvs.height); }
+      });
+
+      function resize() {
+        cvs.width = window.innerWidth;
+        cvs.height = window.innerHeight;
+        cols = Math.floor(cvs.width / 18);
+        drops = Array.from({length: cols}, () => Math.random() * -80);
+      }
+      resize();
+      window.addEventListener('resize', resize);
+      setInterval(() => {
+        if (paused) return;
+        ctx.fillStyle = 'rgba(8,12,16,0.1)';
+        ctx.fillRect(0, 0, cvs.width, cvs.height);
+        ctx.font = '13px monospace';
+        drops.forEach((y, i) => {
+          ctx.globalAlpha = Math.random() * 0.6 + 0.1;
+          ctx.fillStyle = Math.random() > 0.96 ? '#fff' : (Math.random() > 0.6 ? '#00ff9f' : '#00d4ff');
+          ctx.fillText(CHARS[Math.floor(Math.random() * CHARS.length)], i * 18, y * 18);
+          drops[i] = (y * 18 > cvs.height && Math.random() > 0.975) ? 0 : y + 0.5;
+        });
+        ctx.globalAlpha = 1;
+      }, 50);
+    })();
+
+    // ── 5. Click Ripple ──────────────────────────────────────────────
+    (function () {
+      const s = document.createElement('style');
+      s.textContent = '@keyframes _rpl{to{transform:translate(-50%,-50%) scale(8);opacity:0}}';
+      document.head.appendChild(s);
+      document.addEventListener('click', e => {
+        if (!fxEnabled('ripple')) return;
+        const r = document.createElement('div');
+        r.style.cssText = 'position:fixed;pointer-events:none;z-index:99996;left:' + e.clientX + 'px;top:' + e.clientY + 'px;width:4px;height:4px;border-radius:50%;border:1px solid rgba(0,212,255,0.5);transform:translate(-50%,-50%);animation:_rpl 0.4s ease-out forwards;';
+        document.body.appendChild(r);
+        r.addEventListener('animationend', () => r.remove());
+      });
+    })();
+
+    </script>
 </body>
 </html>

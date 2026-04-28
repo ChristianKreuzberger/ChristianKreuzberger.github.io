@@ -44,3 +44,7 @@ You can request to receive an exported file of the personal data we hold about y
 ## Where we send your data
 
 No personal data is sent to third parties.
+
+## Visual effect preferences
+
+This site offers optional visual effects (boot overlay, matrix rain, click ripple) that can be toggled via the ⚙ icon in the top-right corner. Your preferences are stored in your browser's `localStorage` under the keys `fx-boot`, `fx-matrix`, and `fx-ripple`. This data never leaves your device and is not transmitted to any server.

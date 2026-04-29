@@ -2,6 +2,8 @@
 
 Personal website built with [press](https://github.com/ChristianKreuzberger/press), a single-binary static site generator.
 
+> **License:** All content (blog posts, portfolio, text, images), unless stated otherwise, is © Christian Kreuzberger and licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) — no reuse, derivatives, or commercial use without permission. This repo exists as an example of how to use `press`.
+
 ## Structure
 
 ```

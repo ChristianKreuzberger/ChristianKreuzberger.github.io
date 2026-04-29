@@ -49,6 +49,7 @@ Alongside the project work, I published several open-source utilities from that 
 
 ## Links
 
+- [eWorkbench source code on GitHub](https://github.com/eWorkbench/eWorkbench)
 - [Technische Universität München](https://www.tum.de)
 - [Anexia](https://www.anexia.com)
 - [@anx-ckreuzberger on GitHub](https://github.com/anx-ckreuzberger)

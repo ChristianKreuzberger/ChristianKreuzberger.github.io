@@ -8,6 +8,10 @@ updated_at: "2026-04-28T20:18:28Z"
 ---
 # AK Zeitspeicher — Worker Time Tracking Platform
 
+![AK Zeitspeicher login screen](../assets/portfolio/ak-zeitspeicher-screenshot.png)
+
+*Screenshot © 2016–2018 Arbeiterkammer Wien — used for identification/reference purposes*
+
 ## Overview
 
 **AK Zeitspeicher** ("Zeit" = time, "Speicher" = storage) is a free online time tracking tool built for the **Arbeiterkammer Wien** (Austrian Chamber of Labor, AK Wien). It enables Austrian workers to precisely document their working hours — an essential tool when pursuing unpaid wages or resolving working-hour disputes through labor law proceedings.

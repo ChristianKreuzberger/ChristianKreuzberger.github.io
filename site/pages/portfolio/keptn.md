@@ -12,6 +12,12 @@ updated_at: "2026-04-28T20:18:28Z"
 
 *Logo © keptn authors, used under Apache-2.0 license*
 
+![Keptn Bridge sequences view](../assets/portfolio/keptn-bridge-sequences.png)
+
+![Keptn Bridge environment view](../assets/portfolio/keptn-bridge-environment.png)
+
+*Screenshots © keptn authors, used under Apache-2.0 license — source: [v1.keptn.sh](https://v1.keptn.sh/docs/1.0.x/bridge/)*
+
 ## Overview
 
 keptn is an event-based control plane for continuous delivery and automated operations for cloud-native applications. It automates SLO-driven multi-stage delivery pipelines and provides automated remediation triggered by monitoring data — all on top of Kubernetes, driven by CloudEvents.

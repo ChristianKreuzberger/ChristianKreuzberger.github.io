@@ -7,6 +7,8 @@ created_at: "2020-01-01T00:00:00Z"
 updated_at: "2020-01-01T00:00:00Z"
 ---
 
+# CV
+
 ## Personal Information
 
 * Name: Christian Kreuzberger
@@ -17,9 +19,8 @@ updated_at: "2020-01-01T00:00:00Z"
 ## Field of Interests
 
 * Information Technology (IT)
-* IT Security
-* Programming
-* Researching and trying new things out
+* Software Engineering (incl. AI Engineering)
+* IT Security (Cryptography, Hardening, Secure Coding, Authentication)
 * Mathematics
 * Helping others (e.g., by writing tutorials or making YouTube videos)
 
@@ -60,12 +61,12 @@ updated_at: "2020-01-01T00:00:00Z"
 * Programming Languages (ordered by most recent experience):\
   TypeScript, Python, Bash, JavaScript, Go, PHP, HTML, CSS
 * Frameworks:\
-  React, Angular, Google Maps, OpenLayers, Django
+  React, Angular, Django, Google Maps, OpenLayers 
 * Operating Systems:\
   good knowledge of Linux based systems for both, client and server systems, as well as containers.
 * Mathematical topics:\
   Algebra, Cryptology, Passwords, Data processing, simulations, linear optimization, complex calculations, visualization and presentation of results
-* Other specialities:\
+* Things I've used or worked with in the past:\
   Mathematica, Matlab, CPLEX, R-Project, Android, Debugging, Network-Configuration, Databases (PostgreSQL, MySQL, SQLITE), NS-3 (Network Simulator), ndnSIM, LaTeX, Excel/Spreadsheets, Geographical Information Systems (GIS), Django Framework, Computer Networks, Computer maintenance, Apache, GIT, SVN.
 
 ## Scientific Work

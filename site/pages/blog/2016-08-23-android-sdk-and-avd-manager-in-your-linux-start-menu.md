@@ -53,4 +53,3 @@ Categories=Development;Utility;X-XFCE;X-Xfce-Toplevel;
 StartupNotify=false
 Terminal=false
 ```
-```

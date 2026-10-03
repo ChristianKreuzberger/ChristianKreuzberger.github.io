@@ -9,6 +9,8 @@ created_at: "2014-09-23T00:00:00Z"
 updated_at: "2014-09-23T00:00:00Z"
 ---
 
+# New Paper: Client Starvation
+
 Our paper "Client Starvation: A Shortcoming of Client-driven Adaptive Streaming in Named Data Networking", which uses Scalable Video Coding with DASH in Information-Centric Networking got published! You can find it here:
 
-http://www-itec.uni-klu.ac.at/bib/files/icn14\_final.pdf
+<https://web.archive.org/web/20240415101006/http://www-itec.uni-klu.ac.at/bib/files/icn14_final.pdf>

@@ -8,9 +8,11 @@ created_at: "2016-02-23T00:00:00Z"
 updated_at: "2016-02-23T00:00:00Z"
 ---
 
+# Download YouTube MPD Files
+
 Ever wondered which representations YouTube is using for your video? Is it worth uploading your YouTube video with 20 Mbit/s at 1080p and 30 fps?
 
-Find out by analyzing your YouTube videos MPD (Media Presentation Description) file, as explained in my new open source repository here: https://github.com/ChristianKreuzberger/extract-youtube-mpd
+Find out by analyzing your YouTube video's MPD (Media Presentation Description) file, as explained in my new open source repository here: <https://github.com/ChristianKreuzberger/extract-youtube-mpd>
 
 This is the result of one of my videos:
 
@@ -32,4 +34,4 @@ video/mp4,136,2206969,avc1.4d401f,1280/720/24
 video/mp4,137,4144774,avc1.640028,1920/1080/24
 ```
 
-This means my video is available at 4.1 Mbit/s at 1080p and 24 fps, 2.2 Mbit/s and 720p, 1 Mbit/s and 480p, etc... We have a paper submitted to NOSSDAV that shows a full analysis of YouTubes representations, so stay tuned for more information.
+This means my video is available at 4.1 Mbit/s at 1080p and 24 fps, 2.2 Mbit/s and 720p, 1 Mbit/s and 480p, etc... We have a paper submitted to NOSSDAV that shows a full analysis of YouTube's representations, so stay tuned for more information.

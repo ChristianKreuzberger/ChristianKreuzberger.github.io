@@ -9,6 +9,8 @@ created_at: "2016-07-20T00:00:00Z"
 updated_at: "2016-07-20T00:00:00Z"
 ---
 
+# Shell Script for converting multiple images at once
+
 One of the tasks I come across often is converting images from one format into another. For instance, I need to convert SVG to PNG.
 
 This can be achieved easily by using the "convert" commandline tool (ImageMagick) and a standard for loop in linux (note that I wrote the \*.svg statement in the for command on purpose and that I use "$f" on purpose):
@@ -19,7 +21,7 @@ for f in *.svg ; do
 done
 ```
 
-However, this produces ugly file names like "file1.svg.png", which could be desireable in some scenarios, but not in my case when I deploy it for a website. You can bypass this by using `${f%svg}png:`
+However, this produces ugly file names like "file1.svg.png", which could be desirable in some scenarios, but not in my case when I deploy it for a website. You can bypass this by using `${f%svg}png`:
 
 ```
 for f in *.svg ; do

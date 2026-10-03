@@ -10,8 +10,10 @@ created_at: "2015-01-28T00:00:00Z"
 updated_at: "2015-01-28T00:00:00Z"
 ---
 
+# Scalable Video Coding Dataset and Toolchain for Dynamic Adaptive Streaming over HTTP
+
 Dataset URL: <http://concert.itec.aau.at/SVCDataset/>\
-Toolchain @ [Github](https://github.com/ChristianKreuzberger/DASH-SVC-Toolchain)\
+Toolchain @ [GitHub](https://github.com/ChristianKreuzberger/DASH-SVC-Toolchain)\
 [BibTeX](http://www-itec.uni-klu.ac.at/bib/index.php?key=&bib=itec.bib) for citation
 
 Paper Download Link: TBA (March 2015)

@@ -9,4 +9,6 @@ created_at: "2015-02-25T00:00:00Z"
 updated_at: "2015-02-25T00:00:00Z"
 ---
 
+# LD_LIBRARY_PATH vs LIBRARY_PATH
+
 LD\_LIBRARY\_PATH is for dynamically linked (.so) libraries, LIBRARY\_PATH for static (.a) libraries.

@@ -15,4 +15,4 @@ After years on WordPress, I'm moving this site to [press](https://github.com/Chr
 
 `press` is a single-binary tool that turns structured Markdown files into a clean static website. No database, no plugin ecosystem, no PHP — just Markdown in, HTML out.
 
-The [source for this site](https://github.com/ChristianKreuzberger/ChristianKreuzberger.github.io) lives on GitHub: press builds it, and a GitHub Actions workflow deploys it to GitHub Pages on every push. If you're curious, check out the project on GitHub: [github.com/ChristianKreuzberger/press](https://github.com/ChristianKreuzberger/press).
+The [source for this site](https://github.com/ChristianKreuzberger/ChristianKreuzberger.github.io) is now managed with press. If you're curious, check out the project on GitHub: [github.com/ChristianKreuzberger/press](https://github.com/ChristianKreuzberger/press).

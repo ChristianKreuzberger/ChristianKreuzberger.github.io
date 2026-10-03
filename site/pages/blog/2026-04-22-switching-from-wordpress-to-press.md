@@ -6,8 +6,10 @@ tags:
   - "meta"
 weight: 0
 created_at: "2026-04-22T00:00:00Z"
-updated_at: "2026-04-22T00:00:00Z"
+updated_at: "2026-10-03T00:00:00Z"
 ---
+
+# Switching from WordPress to press
 
 After years on WordPress, I'm moving this site to [press](https://github.com/ChristianKreuzberger/press) — a static site generator I built myself.
 

@@ -10,15 +10,18 @@ created_at: "2017-09-28T00:00:00Z"
 updated_at: "2017-09-28T00:00:00Z"
 ---
 
+# pipdeptree – find out why a pip package was installed
+
 Ever wondered why a certain python package was installed?
 
-E.g., when you are installing `WeasyPrint` you will find that it installs a lot of other libraries, such as `cffi`, `cariocffi` and `html5lib`. With `pipdeptree` you can visualize this 🙂
+E.g., when you are installing `WeasyPrint` you will find that it installs a lot of other libraries, such as `cffi`, `cairocffi` and `html5lib`. With `pipdeptree` you can visualize this 🙂
 
-`pip install pipdeptree`
-
-`pipdeptree`
-
+```bash
+pip install pipdeptree
+pipdeptree
 ```
+
+```text
 WeasyPrint==0.40
   - cairocffi [required: >=0.5, installed: 0.8.0]
     - cffi [required: >=1.1.0, installed: 1.11.0]

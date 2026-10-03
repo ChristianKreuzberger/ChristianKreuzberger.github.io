@@ -8,4 +8,6 @@ created_at: "2018-01-22T00:00:00Z"
 updated_at: "2018-01-22T00:00:00Z"
 ---
 
-See <https://github.com/zakjan/cert-chain-resolver>
+# Fix SSL Certificate Chain Issues with Apache
+
+See <https://github.com/zakjan/cert-chain-resolver>

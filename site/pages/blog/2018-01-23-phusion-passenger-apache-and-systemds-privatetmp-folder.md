@@ -9,9 +9,11 @@ created_at: "2018-01-23T00:00:00Z"
 updated_at: "2018-01-23T00:00:00Z"
 ---
 
+# Phusion Passenger, Apache and SystemD’s PrivateTmp Folder
+
 If you have ever gotten this error with your mod passenger installation:
 
-```
+```text
 $ passenger-config restart-app
 *** ERROR: Phusion Passenger doesn't seem to be running. If you are sure that it
 is running, then the causes of this problem could be one of:
@@ -22,7 +24,7 @@ is running, then the causes of this problem could be one of:
  --instance-registry-dir command line argument. If so, please set the
  environment variable PASSENGER_INSTANCE_REGISTRY_DIR to that directory
  and run this command again.
- 2. The instance directory has been removed by an operating system background
+2. The instance directory has been removed by an operating system background
  service. Please set a different instance registry directory using Apache's
  PassengerInstanceRegistryDir option, Nginx's passenger_instance_registry_dir
  option, or Phusion Passenger Standalone's --instance-registry-dir command

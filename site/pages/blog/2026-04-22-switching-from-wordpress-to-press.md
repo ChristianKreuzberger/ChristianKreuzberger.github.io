@@ -6,11 +6,13 @@ tags:
   - "meta"
 weight: 0
 created_at: "2026-04-22T00:00:00Z"
-updated_at: "2026-04-22T00:00:00Z"
+updated_at: "2026-10-03T00:00:00Z"
 ---
+
+# Switching from WordPress to press
 
 After years on WordPress, I'm moving this site to [press](https://github.com/ChristianKreuzberger/press) — a static site generator I built myself.
 
 `press` is a single-binary tool that turns structured Markdown files into a clean static website. No database, no plugin ecosystem, no PHP — just Markdown in, HTML out.
 
-The [source for this site](https://github.com/ChristianKreuzberger/ChristianKreuzberger.github.io) is now managed with press. If you're curious, check out the project on GitHub: [github.com/ChristianKreuzberger/press](https://github.com/ChristianKreuzberger/press).
+The [source for this site](https://github.com/ChristianKreuzberger/ChristianKreuzberger.github.io) lives on GitHub: press builds it, and a GitHub Actions workflow deploys it to GitHub Pages on every push. If you're curious, check out the project on GitHub: [github.com/ChristianKreuzberger/press](https://github.com/ChristianKreuzberger/press).

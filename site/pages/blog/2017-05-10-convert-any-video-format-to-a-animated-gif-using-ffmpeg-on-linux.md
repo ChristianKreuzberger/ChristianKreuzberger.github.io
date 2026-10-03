@@ -1,5 +1,5 @@
 ---
-title: "Convert any video format to a animated gif using ffmpeg on Linux"
+title: "Convert any video format to an animated GIF using ffmpeg on Linux"
 alias: "convert-any-video-format-to-a-animated-gif-using-ffmpeg-on-linux"
 tags:
   - "Automation"
@@ -10,11 +10,13 @@ created_at: "2017-05-10T00:00:00Z"
 updated_at: "2017-05-10T00:00:00Z"
 ---
 
-I needed a quick way of converting videos to gifs on Linux -ffmpeg and [this post on stackexchange](https://unix.stackexchange.com/a/298656) to the rescue!
+# Convert any video format to an animated GIF using ffmpeg on Linux
+
+I needed a quick way of converting videos to GIFs on Linux – ffmpeg and [this post on stackexchange](https://unix.stackexchange.com/a/298656) to the rescue!
 
 The result is this neat little bash script:
 
-```
+```bash
 #!/bin/bash
 
 if [[ $# -eq 0 ]] ; then

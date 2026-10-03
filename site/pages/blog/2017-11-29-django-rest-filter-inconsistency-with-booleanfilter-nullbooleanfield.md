@@ -10,19 +10,25 @@ created_at: "2017-11-29T00:00:00Z"
 updated_at: "2017-11-29T00:00:00Z"
 ---
 
-Django has an interesting default behaviour for NullBooleanFields, which are used by django\_filters BooleanFilter. While the String 'True' evaluates to Python Boolean True, and the String 'False' evaluates to Python Boolean False, this is not happening for the lowercase variants 'true' and 'false'. This is kind of annoying when you are using DJango Rest Filters, where you would have a REST API call like this (e.g., when calling from JavaScript):
+# Django (REST) Filter Inconsistency with BooleanFilter / NullBooleanField
 
-GET /tasks/?show\_only\_my\_tasks=true
+Django has an interesting default behaviour for NullBooleanFields, which are used by django\_filters BooleanFilter. While the String 'True' evaluates to Python Boolean True, and the String 'False' evaluates to Python Boolean False, this is not happening for the lowercase variants 'true' and 'false'. This is kind of annoying when you are using Django REST Filters, where you would have a REST API call like this (e.g., when calling from JavaScript):
 
-This does not work as expected, as "show\_only\_my\_tasks=true" evaluates to "None".
+```text
+GET /tasks/?show_only_my_tasks=true
+```
 
-The correct usage according to Djangos NullBooleanField would have been this:
+This does not work as expected, as `show_only_my_tasks=true` evaluates to "None".
 
-GET /tasks/?show\_only\_my\_tasks=True
+The correct usage according to Django's NullBooleanField would have been this:
+
+```text
+GET /tasks/?show_only_my_tasks=True
+```
 
 To overcome this issue, you can use the following code snippet:
 
-```
+```python
 class BetterBooleanSelect(NullBooleanSelect):
     """
     Djangos NullBooleanSelect does not evaluate 'true' to True, and not 'false' to False
@@ -44,7 +50,7 @@ class BetterBooleanSelect(NullBooleanSelect):
 
 class BetterBooleanField(forms.NullBooleanField):
     """
-    Better Boolean Field that also evalutes 'false' to False and 'true' to True
+    Better Boolean Field that also evaluates 'false' to False and 'true' to True
     """
     widget = BetterBooleanSelect
 
@@ -60,7 +66,7 @@ class BetterBooleanFilter(django_filters.BooleanFilter):
 
 In your REST Filter you then only need to write this:
 
-```
+```python
 class TaskFilter(BaseFilter):
     """ Filter for Tasks """
     class Meta:

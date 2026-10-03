@@ -8,9 +8,11 @@ created_at: "2019-02-24T00:00:00Z"
 updated_at: "2019-02-24T00:00:00Z"
 ---
 
+# Container size matters – Optimize the size of your Python/Django Containers
+
 In one of my recent videos I've discussed the size of the Django/Python Docker Containers and how to decrease it:
 
-[Embedded video](https://www.youtube.com/watch?v=Ex3B8FU6uxc)
+[Dockerize your Django App - Optimize the size of your Docker Images to speed up deployments](https://www.youtube.com/watch?v=Ex3B8FU6uxc)
 
 I failed to successfully create an image based on alpine, which is known to be very slim. With the help of Aaron Goodrich, who posted a comment with a Dockerfile for alpine, I was able to finally create such an image 🙂 Thanks for the help!
 
@@ -20,7 +22,7 @@ Please note that I have slightly changed the Dockerfile compared to the video ab
 
 Based on Python 3.5 Jessie: 740 MB
 
-```
+```dockerfile
 FROM python:3.5-jessie
 
 COPY ./app /app
@@ -31,7 +33,7 @@ RUN pip install --no-cache-dir -r requirements/dev.txt
 
 Based on Python 3.5 Slim: 188 MB
 
-```
+```dockerfile
 FROM python:3.5-slim
 
 COPY ./app /app
@@ -42,7 +44,7 @@ RUN pip install --no-cache-dir -r requirements/dev.txt
 
 Based on Python 3.5 with Alpine: 248 MB
 
-```
+```dockerfile
 FROM python:3.5-alpine
 
 COPY ./app /app

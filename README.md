@@ -2,7 +2,7 @@
 
 Personal website built with [press](https://github.com/ChristianKreuzberger/press), a single-binary static site generator.
 
-> **License:** All content (blog posts, portfolio, text, images), unless stated otherwise, is © Christian Kreuzberger and licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) — no reuse, derivatives, or commercial use without permission. This repo exists as an example of how to use `press`.
+> **License:** All content (blog posts, portfolio, text, images), unless stated otherwise, is © Christian Kreuzberger and licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) — you may share it unchanged, with attribution, for non-commercial purposes; derivatives and commercial use need permission. This repo exists as an example of how to use `press`.
 
 ## Structure
 
@@ -12,9 +12,12 @@ site/
   pages/
     index.md          # Homepage
     cv.md             # CV page
+    imprint.md        # Imprint / Impressum
+    privacy-policy.md # Privacy policy
     blog/             # Blog posts (section)
     portfolio/        # Portfolio entries (section)
-    assets/           # Static assets (images, etc.)
+    assets/           # Static assets (images, etc.), one folder per section
+  dist/               # Build output (git-ignored)
 ```
 
 ## Prerequisites
@@ -52,4 +55,6 @@ press tree
 
 ## Deploying
 
-Build output is in `site/dist/`. Deploy that folder to any static host.
+Every push to `main` builds the site and publishes it to GitHub Pages (see `.github/workflows/deploy.yml`). The workflow installs the latest `press` release.
+
+To host it elsewhere, run `press build` in `site/` and upload `site/dist/` to any static host.

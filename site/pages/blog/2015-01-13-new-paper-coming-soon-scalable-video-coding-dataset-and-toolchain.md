@@ -8,4 +8,6 @@ created_at: "2015-01-13T00:00:00Z"
 updated_at: "2015-01-13T00:00:00Z"
 ---
 
-Stay tuned! Paper got accepted at MMSyS'15.
+# New Paper – Coming Soon: Scalable Video Coding Dataset and Toolchain
+
+Stay tuned! Paper got accepted at MMSys'15.

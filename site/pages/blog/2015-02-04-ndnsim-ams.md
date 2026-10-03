@@ -8,8 +8,10 @@ created_at: "2015-02-04T00:00:00Z"
 updated_at: "2015-02-04T00:00:00Z"
 ---
 
+# ndnSIM + AMS = ?
+
 New Project: amus-ndnSIM\
-Blending **A**daptive **Mu**ltimedia **S**treaming (e.g., MPEG-DASH) with Named-Data Networking (NDN) using the [ndnSIM](http://ndnsim.net/) simulation software.
+Blending **A**daptive **Mu**ltimedia **S**treaming (e.g., MPEG-DASH) with Named-Data Networking (NDN) using the [ndnSIM](https://ndnsim.net/) simulation software.
 
 Step 1: Install ndnSIM 2.0\
 Step 2: Invent a file transfer protocol\

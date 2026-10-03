@@ -9,6 +9,8 @@ created_at: "2014-12-01T00:00:00Z"
 updated_at: "2014-12-01T00:00:00Z"
 ---
 
-Based on our last paper, we published another paper called " Using In-Network Adaptation to Tackle Inefficiencies Caused by DASH in Information-Centric Networks". It is available here:
+# New Paper: Using In-Network Adaptation in ICN
 
-<http://www-itec.uni-klu.ac.at/bib/files/video01fp.pdf>
+Based on our last paper, we published another paper called "Using In-Network Adaptation to Tackle Inefficiencies Caused by DASH in Information-Centric Networks". It is available here:
+
+<https://web.archive.org/web/20240713030859/http://www-itec.uni-klu.ac.at/bib/files/video01fp.pdf>

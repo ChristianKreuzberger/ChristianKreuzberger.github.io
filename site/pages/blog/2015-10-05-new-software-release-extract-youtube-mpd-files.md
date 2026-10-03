@@ -8,6 +8,8 @@ created_at: "2015-10-05T00:00:00Z"
 updated_at: "2015-10-05T00:00:00Z"
 ---
 
-For more information see my github repository:
+# New Software Release: Extract YouTube MPD Files
 
-https://github.com/ChristianKreuzberger/extract-youtube-mpd
+For more information see my GitHub repository:
+
+<https://github.com/ChristianKreuzberger/extract-youtube-mpd>

@@ -20,7 +20,7 @@ On April 28, 2026, the project entered **maintenance mode**, succeeded by the [R
 
 ## My Role
 
-I was the **primary maintainer** — first contributor listed, highest commit count, and CODEOWNERS-listed owner of core architecture assets. In April 2026 alone I authored 28 commits (88% of that month's output). I also authored the maintenance mode transition announcement.
+I am the **creator and primary maintainer** — first contributor listed, highest commit count, and CODEOWNERS-listed owner of core architecture assets. In April 2026 alone I authored 28 commits (88% of that month's output). I also authored the maintenance mode transition announcement.
 
 ## Capabilities
 

@@ -10,13 +10,13 @@ updated_at: "2026-10-03T00:00:00Z"
 
 ## Overview
 
-**TUM Workbench** (formerly called *eric workbench*, open-sourced as *eWorkbench*) is a web-based platform for managing research data and projects, developed by **Anexia** for the **Technische Universität München (TUM)**. It supports researchers with collaboration and semi-automatic documentation of their work.
+**TUM Workbench** (formerly *eRIC Workbench*, open-sourced as *eWorkbench*) is a large web application (backend and frontend) for scientists to manage their research data and projects, with the **LabBook** as its main feature. It was developed by **Anexia** for the **Technische Universität München (TUM)** and supports researchers with collaboration and semi-automatic documentation of their work.
 
 TUM is one of Germany's leading technical universities — consistently ranked among the top institutions in Europe.
 
 ## My Role
 
-I was a **software engineer at Anexia** during the development of this platform, contributing across the stack during roughly **2013–2018**. I worked under the GitHub handle [@anx-ckreuzberger](https://github.com/anx-ckreuzberger). The project was built under contract for TUM; its source code was later published on GitHub as [eWorkbench](https://github.com/eWorkbench/eWorkbench).
+I was a **software engineer at Anexia** during the development of this platform, contributing across the stack from **2016 to 2019**. It was one of my main projects there. I worked under the GitHub handle [@anx-ckreuzberger](https://github.com/anx-ckreuzberger). The project was built under contract for TUM; its source code was later published on GitHub as [eWorkbench](https://github.com/eWorkbench/eWorkbench).
 
 Alongside the project work, I published several open-source utilities from that period:
 
@@ -25,7 +25,7 @@ Alongside the project work, I published several open-source utilities from that 
 
 ## What It Does
 
-- Electronic lab notebook for documenting research
+- LabBook — an electronic lab notebook for documenting research
 - Task and project management
 - File management for research data
 - Collaboration between researchers and teams
@@ -38,7 +38,7 @@ Alongside the project work, I published several open-source utilities from that 
 
 ## Timeline
 
-- **~2013–2018** — Development and maintenance at Anexia
+- **2016–2019** — Development and maintenance at Anexia (my time on the project)
 - **2020** — Source code published on GitHub as eWorkbench
 
 ## Links

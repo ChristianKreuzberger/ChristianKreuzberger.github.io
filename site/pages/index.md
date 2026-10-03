@@ -13,7 +13,7 @@ Software engineer based in Friedrichshafen, Germany, currently employed at [Dyna
 ## Highlights
 
 - Core contributor to [keptn](https://keptn.sh) — CNCF incubating project for SLO-driven multi-stage delivery (1,700+ GitHub stars)
-- Creator of [Dynatrace MCP Server](https://github.com/dynatrace-oss/dynatrace-mcp) — brings Dynatrace observability into AI assistant workflows
+- Creator and primary maintainer of [Dynatrace MCP Server](https://github.com/dynatrace-oss/dynatrace-mcp) — brings Dynatrace observability into AI assistant workflows
 - Blogger on IT, security, programming, Docker, Kubernetes, and related topics
 
 ## Explore

@@ -14,7 +14,7 @@ updated_at: "2015-02-04T00:00:00Z"
 
 **UPDATE June 25th:** ndn-cxx MUST be compiled as a shared library now, the tutorial is now reflecting this change by executing `./waf configure --enable-shared --disable-static` for ndn-cxx
 
-**First of all:** follow the tutorial provided here:\
+**First of all:** follow the tutorial provided here: *(link missing — it was lost when this post was migrated from WordPress)*\
 **Second:** If you feel comfortable enough, you can copy and paste the commands from this how-to, which will generate the following directory structure:
 
 ```

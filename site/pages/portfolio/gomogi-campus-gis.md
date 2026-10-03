@@ -4,7 +4,7 @@ alias: ""
 tags: []
 weight: 6
 created_at: "2026-04-29T19:19:16Z"
-updated_at: "2026-04-29T19:19:16Z"
+updated_at: "2026-10-03T00:00:00Z"
 ---
 # Campus GIS — Interactive University Campus Maps
 
@@ -12,7 +12,7 @@ updated_at: "2026-04-29T19:19:16Z"
 
 ![Campus GIS — floor plan detail view](../assets/portfolio/campus-gis-floorplan.png)
 
-*Screenshots show campusplan.aau.at (current successor site) © Universität Klagenfurt — original campus-gis.aau.at built by Gomogi*
+*Screenshots show campusplan.aau.at (current successor site) © Universität Klagenfurt — original campus-gis.aau.at built by GOMOGI*
 
 ## Overview
 
@@ -25,7 +25,7 @@ I built this as a developer at **GOMOGI Michael Diener** — a small software co
 
 ## My Role
 
-I was the **primary developer** at Gomogi responsible for building and maintaining both deployments. The work spanned from a freelance engagement in 2008 through a part-time position from January 2009 to February 2013.
+I was the **primary developer** at GOMOGI responsible for building and maintaining both deployments. The work spanned from a freelance engagement in 2008 through a part-time position from January 2009 to February 2013.
 
 ## What It Does
 
@@ -43,7 +43,11 @@ I was the **primary developer** at Gomogi responsible for building and maintaini
 
 ## Timeline
 
-- **2008** — First freelance engagement at Gomogi
+- **2008** — First freelance engagement at GOMOGI
 - **2009–2013** — Part-time employee; built and maintained both campus GIS deployments
-- **2026** — Both universities still run campus map systems at the same URLs (now powered by indrz)
+- **2026** — Both universities still run campus maps, now at new URLs (see above) and powered by [indrz](https://www.indrz.com)
 
+## Links
+
+- [campusplan.aau.at](https://campusplan.aau.at/) — current AAU Klagenfurt campus map
+- [campus.wu.ac.at](https://campus.wu.ac.at/) — current WU Wien campus map

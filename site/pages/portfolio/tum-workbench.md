@@ -1,22 +1,22 @@
 ---
-title: "TUM Workbench — Student Portal for TU München"
+title: "TUM Workbench — Research Data and Project Management for TU München"
 alias: ""
 tags: []
 weight: 5
 created_at: "2026-04-28T20:18:28Z"
-updated_at: "2026-04-28T20:18:28Z"
+updated_at: "2026-10-03T00:00:00Z"
 ---
-# TUM Workbench — Student Portal for TU München
+# TUM Workbench — Research Data and Project Management for TU München
 
 ## Overview
 
-**TUM Workbench** (formerly called *eric workbench*) is a web-based student services and administration portal developed by **Anexia** for the **Technische Universität München (TUM)**. It serves as the central digital workbench for student applications, onboarding workflows, and university administration processes.
+**TUM Workbench** (formerly *eRIC Workbench*, open-sourced as *eWorkbench*) is a large web application (backend and frontend) for scientists to manage their research data and projects, with the **LabBook** as its main feature. It was developed by **Anexia** for the **Technische Universität München (TUM)** and supports researchers with collaboration and semi-automatic documentation of their work.
 
-TUM is one of Germany's leading technical universities — consistently ranked among the top institutions in Europe — with approximately **50,000 students**.
+TUM is one of Germany's leading technical universities — consistently ranked among the top institutions in Europe.
 
 ## My Role
 
-I was a **software engineer at Anexia** during the development of this platform, contributing across the stack during roughly **2013–2018**. I worked under the GitHub handle [@anx-ckreuzberger](https://github.com/anx-ckreuzberger). The project is a closed-source commercial application built under contract for TUM — no public repository exists, and specific architectural details are proprietary.
+I was a **software engineer at Anexia** during the development of this platform, contributing across the stack from **2016 to 2019**. It was one of my main projects there. I worked under the GitHub handle [@anx-ckreuzberger](https://github.com/anx-ckreuzberger). The project was built under contract for TUM; its source code was later published on GitHub as [eWorkbench](https://github.com/eWorkbench/eWorkbench).
 
 Alongside the project work, I published several open-source utilities from that period:
 
@@ -25,10 +25,10 @@ Alongside the project work, I published several open-source utilities from that 
 
 ## What It Does
 
-- Web-based portal for student applications and onboarding
-- Manages academic administration workflows
-- Connects students with university back-office systems
-- Designed for enterprise-grade reliability and scale at ~50,000-student volume
+- LabBook — an electronic lab notebook for documenting research
+- Task and project management
+- File management for research data
+- Collaboration between researchers and teams
 
 ## Tech Stack
 
@@ -36,16 +36,10 @@ Alongside the project work, I published several open-source utilities from that 
 - **Frontend**: AngularJS
 - **Hosting**: Anexia cloud infrastructure
 
-## Scale & Impact
-
-- Serves the full student body of TU München (~50,000 students)
-- Mission-critical university infrastructure requiring high reliability
-- Delivered as a commercial engagement by Anexia
-
 ## Timeline
 
-- **~2013–2018** — Development and maintenance at Anexia
-- Formerly named *eric workbench*; rebranded as TUM Workbench
+- **2016–2019** — Development and maintenance at Anexia (my time on the project)
+- **2020** — Source code published on GitHub as eWorkbench
 
 ## Links
 

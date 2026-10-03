@@ -4,7 +4,7 @@ alias: ""
 tags: []
 weight: 1
 created_at: "2026-04-28T20:18:28Z"
-updated_at: "2026-04-28T20:18:28Z"
+updated_at: "2026-10-03T00:00:00Z"
 ---
 # keptn — Cloud-Native Lifecycle Orchestration
 
@@ -26,12 +26,12 @@ The project was incubated by the **Cloud Native Computing Foundation (CNCF)** an
 
 ## My Role
 
-I was the **4th top contributor** in the [keptn/keptn](https://github.com/keptn/keptn) repository out of 115 total contributors, working under my GitHub handle [@christian-kreuzberger-dtx](https://github.com/christian-kreuzberger-dtx). I was a member of the keptn GitHub organization and contributed across the core control plane, integrations, and surrounding tooling.
+I was the **4th top contributor** in the [keptn/keptn](https://github.com/keptn/keptn) repository out of 100+ contributors, working under my GitHub handle [@christian-kreuzberger-dtx](https://github.com/christian-kreuzberger-dtx). I was a member of the keptn GitHub organization and contributed across the core control plane, integrations, and surrounding tooling.
 
 Notable personal repositories in the keptn ecosystem:
 
-- [**keptn-selfmon-monaco**](https://github.com/christian-kreuzberger-dtx/keptn-selfmon-monaco) — Monitoring-as-code for Keptn self-monitoring
-- [**ck-keptn-qg**](https://github.com/christian-kreuzberger-dtx/ck-keptn-qg) — Keptn Quality Gate for Keptn itself
+- [**keptn-selfmon-monaco**](https://github.com/christian-kreuzberger-dtx/keptn-selfmon-monaco) — Monitoring-as-code for keptn self-monitoring
+- [**ck-keptn-qg**](https://github.com/christian-kreuzberger-dtx/ck-keptn-qg) — keptn quality gate for keptn itself
 - [**keptn-job-executor-delivery-poc**](https://github.com/christian-kreuzberger-dtx/keptn-job-executor-delivery-poc) — POC using the job-executor for continuous delivery
 - [**keptn-tempberry-example**](https://github.com/christian-kreuzberger-dtx/keptn-tempberry-example) — Example integration
 - [**keptn-import-example**](https://github.com/christian-kreuzberger-dtx/keptn-import-example) — Import workflow example
@@ -50,7 +50,7 @@ The [keptn-contrib](https://github.com/keptn-contrib) organization hosts stable,
 
 ## Tech Stack
 
-- **Languages**: Go (55%), TypeScript (38%), Shell, Dockerfile
+- **Languages**: Go, TypeScript, Shell, Dockerfile
 - **Runtime**: Kubernetes (Helm chart deployment)
 - **Protocol**: CloudEvents (event-driven orchestration)
 - **Packaging**: Helm (signed with cosign from v0.19.0)
@@ -59,13 +59,15 @@ The [keptn-contrib](https://github.com/keptn-contrib) organization hosts stable,
 
 ## Scale
 
+*As of October 2026; the repository is archived.*
+
 | Metric | Value |
 |---|---|
-| GitHub stars | 1,800+ |
-| Forks | 235 |
-| Contributors | 115 |
+| GitHub stars | 1,700+ |
+| Forks | 230+ |
+| Contributors | 100+ |
 | Releases | 60 (v0.1.x → v1.4.5) |
-| CNCF status | Incubating |
+| CNCF status | Incubating (at end of life) |
 
 ## Timeline
 
@@ -77,7 +79,7 @@ The [keptn-contrib](https://github.com/keptn-contrib) organization hosts stable,
 
 ## Blog Posts
 
-- [What have I been doing the last 2 years? (June 2022)](../blog/2022-06-13-what-have-i-been-doing-the-last-2-years.html) — covers my shift toward Kubernetes and Keptn, with video tutorials on setting up Keptn for continuous delivery
+- [What have I been doing the last 2 years? (June 2022)](/blog/2022-06-13-what-have-i-been-doing-the-last-2-years.html) — covers my shift toward Kubernetes and keptn, with video tutorials on setting up keptn for continuous delivery
 
 ## Links
 

@@ -4,7 +4,7 @@ alias: ""
 tags: []
 weight: 3
 created_at: "2026-04-28T20:18:28Z"
-updated_at: "2026-04-28T20:18:28Z"
+updated_at: "2026-10-03T00:00:00Z"
 ---
 # AutomationEngine Connectors — Dynatrace Workflow Integrations
 
@@ -28,7 +28,7 @@ Over the course of the project I:
 - **Contributed across the connector catalogue** — direct code contributions or library-level contributions to nearly every connector listed below
 - **Created and reviewed hundreds of PRs** — maintained code quality and consistency across the growing connector suite
 - **Onboarded new developers** — brought engineers up to speed on the connector architecture, tooling, and contribution workflow
-- **Contributed to [Dynatrace-workflow-samples](https://github.com/Dynatrace/Dynatrace-workflow-samples)** — 7th contributor out of 25 on the public samples repository
+- **Contributed to [Dynatrace-workflow-samples](https://github.com/Dynatrace/Dynatrace-workflow-samples)** — one of 20+ contributors to the public samples repository
 
 The individual connector implementations are part of the closed-source Dynatrace platform.
 

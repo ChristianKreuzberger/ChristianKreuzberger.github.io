@@ -22,7 +22,7 @@ updated_at: "2026-10-03T00:00:00Z"
 * Software Engineering (incl. AI Engineering)
 * IT Security (Cryptography, Hardening, Secure Coding, Authentication)
 * Mathematics
-* Helping others (e.g., by writing tutorials or making YouTube videos)
+* Providing tutorials to enable others
 
 ## Education
 

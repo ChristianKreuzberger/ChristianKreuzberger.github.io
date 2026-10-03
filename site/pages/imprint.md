@@ -1,5 +1,5 @@
 ---
-title: "Imprint / Impressum"
+title: "Imprint"
 alias: "imprint"
 tags: []
 weight: 0
@@ -7,7 +7,7 @@ created_at: "2020-01-01T00:00:00Z"
 updated_at: "2026-10-03T00:00:00Z"
 ---
 
-# Imprint / Impressum
+# Imprint
 
 This blog is a private blog maintained by / Dieser private Blog wird unterhalten von:
 

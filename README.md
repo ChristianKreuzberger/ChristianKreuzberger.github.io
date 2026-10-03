@@ -55,6 +55,6 @@ press tree
 
 ## Deploying
 
-Every push to `main` builds the site and publishes it to GitHub Pages (see `.github/workflows/deploy.yml`). The workflow installs the latest `press` release.
+The live site ([chkr.at](https://chkr.at)) is hosted on a server in Germany. Build it with `press build` in `site/`; the output is in `site/dist/`.
 
-To host it elsewhere, run `press build` in `site/` and upload `site/dist/` to any static host.
+Every push to `main` also publishes a demo copy to GitHub Pages (see `.github/workflows/deploy.yml`). The workflow installs the latest `press` release.

@@ -78,10 +78,10 @@ updated_at: "2026-10-03T00:00:00Z"
 
 ## Projects / Contributions
 
-* Primary maintainer of the [Dynatrace MCP Server](/portfolio/dynatrace-mcp-server.html) ([GitHub](https://github.com/dynatrace-oss/dynatrace-mcp))
+* Creator and primary maintainer of the [Dynatrace MCP Server](/portfolio/dynatrace-mcp-server.html) ([GitHub](https://github.com/dynatrace-oss/dynatrace-mcp))
 * Core contributor to [keptn](/portfolio/keptn.html)
 * Founding team member of the Dynatrace [AutomationEngine Connectors](/portfolio/connectors-automationengine.html)
-* [TUM Workbench](/portfolio/tum-workbench.html) at Anexia
+* [TUM Workbench](/portfolio/tum-workbench.html) (formerly eRIC Workbench) at Anexia — research data management app for scientists, built around the LabBook
 * [AK Zeitspeicher](/portfolio/ak-zeitspeicher.html) at Anexia
 * Programmer for [Campus GIS](/portfolio/gomogi-campus-gis.html) of the University of Klagenfurt (originally campus-gis.aau.at, now [campusplan.aau.at](https://campusplan.aau.at/))
 * Programmer for [Campus GIS](/portfolio/gomogi-campus-gis.html) of WU Wien (Vienna University of Economics and Business; originally gis.wu.ac.at, now [campus.wu.ac.at](https://campus.wu.ac.at/))

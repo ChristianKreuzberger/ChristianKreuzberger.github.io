@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christian Kreuzberger: software engineer. Blog, portfolio and CV.">
     <title>chkr.at - {{.Title}}</title>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -479,6 +480,20 @@
             transform: translateX(14px);
             background: var(--accent);
         }
+        .toggle-switch input:focus-visible + .toggle-track {
+            outline: 1px solid var(--accent);
+            outline-offset: 2px;
+        }
+        .settings-note {
+            margin-top: 0.75rem;
+            padding-top: 0.6rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.7rem;
+            line-height: 1.4;
+        }
+        .settings-note code { font-size: 0.7rem; }
+        .settings-note a { color: var(--accent2); }
 
         /* ── Responsive ───────────────────────────────────────────── */
         @media (max-width: 600px) {
@@ -496,7 +511,7 @@
             <nav>{{range .Pages}}<a href="{{.URL}}">{{.Title}}</a>{{end}}</nav>
         </div>
     </header>
-    <button class="settings-btn" id="settingsBtn" aria-label="Toggle effects" title="Effects">⚙</button>
+    <button class="settings-btn" id="settingsBtn" aria-label="Toggle effects" title="Effects" aria-expanded="false" aria-controls="settingsPanel">⚙</button>
     <div class="settings-panel" id="settingsPanel">
             <h3>Effects</h3>
             <div class="settings-row">
@@ -511,7 +526,7 @@
                 <label for="tog-ripple">Click ripple</label>
                 <label class="toggle-switch"><input type="checkbox" id="tog-ripple"><span class="toggle-track"></span></label>
             </div>
-            <p style="margin-top:0.75rem;padding-top:0.6rem;border-top:1px solid var(--border);color:var(--muted);font-size:0.7rem;line-height:1.4;">Preferences saved in <code style="font-size:0.7rem;">localStorage</code> (<code style="font-size:0.7rem;">fx-boot</code>, <code style="font-size:0.7rem;">fx-matrix</code>, <code style="font-size:0.7rem;">fx-ripple</code>). No cookies. <a href="/privacy-policy.html" style="color:var(--accent2);">Privacy Policy ›</a></p>
+            <p class="settings-note">Preferences saved in <code>localStorage</code> (<code>fx-boot</code>, <code>fx-matrix</code>, <code>fx-ripple</code>). No cookies. <a href="/privacy-policy.html">Privacy Policy ›</a></p>
         </div>
     <main>
         {{.Content}}
@@ -531,17 +546,29 @@
 
     <script>
     // ── Settings panel ───────────────────────────────────────────────
+    // Animations default to off for visitors who asked the OS for reduced motion.
+    const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const FX = {
-      boot:   { key: 'fx-boot',   def: true },
-      matrix: { key: 'fx-matrix', def: true },
-      ripple: { key: 'fx-ripple', def: true },
+      boot:   { key: 'fx-boot',   def: motionOk },
+      matrix: { key: 'fx-matrix', def: motionOk },
+      ripple: { key: 'fx-ripple', def: motionOk },
     };
+    // Storage access throws when site data is blocked; that must not break the page.
+    function storageGet(store, key) {
+      try { return store.getItem(key); } catch (e) { return null; }
+    }
+    function storageSet(store, key, val) {
+      try { store.setItem(key, val); } catch (e) {}
+    }
     function fxEnabled(name) {
-      const v = localStorage.getItem(FX[name].key);
+      const v = storageGet(localStorage, FX[name].key);
       return v === null ? FX[name].def : v === '1';
     }
     function fxSet(name, on) {
-      localStorage.setItem(FX[name].key, on ? '1' : '0');
+      storageSet(localStorage, FX[name].key, on ? '1' : '0');
+    }
+    function cssVar(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
     }
 
     (function () {
@@ -556,27 +583,37 @@
         el.addEventListener('change', () => fxSet(name, el.checked));
       });
 
+      function setOpen(open) {
+        panel.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
       btn.addEventListener('click', e => {
         e.stopPropagation();
-        panel.classList.toggle('open');
+        setOpen(!panel.classList.contains('open'));
       });
       document.addEventListener('click', e => {
-        if (!panel.contains(e.target)) panel.classList.remove('open');
+        if (!panel.contains(e.target)) setOpen(false);
+      });
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && panel.classList.contains('open')) {
+          setOpen(false);
+          btn.focus();
+        }
       });
     })();
 
     // ── 1. Boot Overlay (once per session) ──────────────────────────
     (function () {
       if (!fxEnabled('boot')) return;
-      if (sessionStorage.getItem('booted')) return;
-      sessionStorage.setItem('booted', '1');
+      if (storageGet(sessionStorage, 'booted')) return;
+      storageSet(sessionStorage, 'booted', '1');
       const now = new Date();
       const pad = n => String(n).padStart(2, '0');
       const ts = now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate());
       const lines = [
-        '$ git clone https://github.com/ChristianKreuzberger/personalWebsite',
-        '> Cloning into \'personalWebsite\'... done.',
-        '$ cd personalWebsite && press serve',
+        '$ git clone https://github.com/ChristianKreuzberger/ChristianKreuzberger.github.io',
+        '> Cloning into \'ChristianKreuzberger.github.io\'... done.',
+        '$ cd ChristianKreuzberger.github.io/site && press serve',
         '> Serving at http://localhost:3000',
         '$ whoami',
         '> christian kreuzberger',
@@ -584,9 +621,9 @@
         '> ' + ts,
       ];
       const ov = document.createElement('div');
-      ov.style.cssText = 'position:fixed;inset:0;background:#080c10;z-index:999999;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:0.85rem;transition:opacity 0.5s;';
+      ov.style.cssText = 'position:fixed;inset:0;background:var(--bg);z-index:999999;display:flex;align-items:center;justify-content:center;font-family:monospace;font-size:0.85rem;transition:opacity 0.5s;';
       const box = document.createElement('div');
-      box.style.cssText = 'padding:1.75rem 2rem;border:1px solid #1e2d3d;border-radius:4px;min-width:320px;max-width:90vw;';
+      box.style.cssText = 'padding:1.75rem 2rem;border:1px solid var(--border);border-radius:4px;min-width:320px;max-width:90vw;';
       ov.appendChild(box);
       document.body.appendChild(ov);
       let i = 0;
@@ -596,7 +633,7 @@
         }
         const p = document.createElement('p');
         const isCmd = lines[i].startsWith('$');
-        p.style.cssText = 'margin:0.25rem 0;opacity:0;transition:opacity 0.1s;color:' + (isCmd ? '#a8b8c8' : '#00ff9f') + ';';
+        p.style.cssText = 'margin:0.25rem 0;opacity:0;transition:opacity 0.1s;color:' + (isCmd ? 'var(--text)' : 'var(--accent2)') + ';';
         p.textContent = lines[i++];
         box.appendChild(p);
         requestAnimationFrame(() => p.style.opacity = '1');
@@ -611,15 +648,21 @@
       document.body.prepend(cvs);
       const ctx = cvs.getContext('2d');
       const CHARS = 'アイウエオカキクケコ01░▒▓│┼┤├─╬╠═';
-      let cols, drops, paused = !fxEnabled('matrix');
-      if (paused) cvs.style.opacity = '0';
+      const C = { bg: cssVar('--bg'), a1: cssVar('--accent'), a2: cssVar('--accent2') };
+      let cols, drops, timer = null;
 
-      // re-check on settings change
-      document.getElementById('tog-matrix').addEventListener('change', e => {
-        paused = !e.target.checked;
-        cvs.style.opacity = paused ? '0' : '0.055';
-        if (!paused) { ctx.clearRect(0,0,cvs.width,cvs.height); }
-      });
+      // Only run the timer while visible, so a disabled effect costs no CPU.
+      function setRunning(on) {
+        cvs.style.opacity = on ? '0.055' : '0';
+        if (on && !timer) {
+          ctx.clearRect(0, 0, cvs.width, cvs.height);
+          timer = setInterval(draw, 50);
+        } else if (!on && timer) {
+          clearInterval(timer);
+          timer = null;
+        }
+      }
+      document.getElementById('tog-matrix').addEventListener('change', e => setRunning(e.target.checked));
 
       function resize() {
         cvs.width = window.innerWidth;
@@ -629,22 +672,23 @@
       }
       resize();
       window.addEventListener('resize', resize);
-      setInterval(() => {
-        if (paused) return;
-        ctx.fillStyle = 'rgba(8,12,16,0.1)';
+      function draw() {
+        ctx.globalAlpha = 0.1;
+        ctx.fillStyle = C.bg;
         ctx.fillRect(0, 0, cvs.width, cvs.height);
         ctx.font = '13px monospace';
         drops.forEach((y, i) => {
           ctx.globalAlpha = Math.random() * 0.6 + 0.1;
-          ctx.fillStyle = Math.random() > 0.96 ? '#fff' : (Math.random() > 0.6 ? '#00ff9f' : '#00d4ff');
+          ctx.fillStyle = Math.random() > 0.96 ? '#fff' : (Math.random() > 0.6 ? C.a2 : C.a1);
           ctx.fillText(CHARS[Math.floor(Math.random() * CHARS.length)], i * 18, y * 18);
           drops[i] = (y * 18 > cvs.height && Math.random() > 0.975) ? 0 : y + 0.5;
         });
         ctx.globalAlpha = 1;
-      }, 50);
+      }
+      setRunning(fxEnabled('matrix'));
     })();
 
-    // ── 5. Click Ripple ──────────────────────────────────────────────
+    // ── 3. Click Ripple ──────────────────────────────────────────────
     (function () {
       const s = document.createElement('style');
       s.textContent = '@keyframes _rpl{to{transform:translate(-50%,-50%) scale(8);opacity:0}}';
